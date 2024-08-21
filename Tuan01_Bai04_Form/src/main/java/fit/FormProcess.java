@@ -41,9 +41,10 @@ public class FormProcess extends HttpServlet {
 		String str = "<p>Name: " + request.getParameter("first") + " " + request.getParameter("last") + "</p>"
 				+ "<p>Username: " + request.getParameter("username") + "</p>"
 				+ "<p>Email: " + request.getParameter("email") + "</p>"
-				+ "<p>Password: " + request.getParameter("password") + "</p>"
 				+ "<p>Facebook: " + request.getParameter("facebook") + "</p>"
 				+ "<p>Short bio: " + request.getParameter("bio") + "</p>";
+		
+		pw.write(str);
 	}
 
 }
