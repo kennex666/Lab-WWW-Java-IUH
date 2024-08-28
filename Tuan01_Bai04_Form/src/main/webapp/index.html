@@ -1,78 +1,80 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta charset="ISO-8859-1">
-<title>Form data</title>
-<style>
-	.container{
-		display: flex;
-		flex-direction: column;
-		padding: 1rem 3rem;
-		background-color: #252424;
-		color: #fff
-	}
+	<meta charset="ISO-8859-1">
+	<title>Form data</title>
+	<style>
+		.container {
+			display: flex;
+			flex-direction: column;
+			padding: 1rem 3rem;
+			background-color: #252424;
+			color: #fff
+		}
 
-	.flex-row{
-		display:flex;
-		flex-direction: row;
-		gap: 1rem;
-	}
+		.flex-row {
+			display: flex;
+			flex-direction: row;
+			gap: 1rem;
+		}
 
-	.flex-col{
-		display: flex;
-		flex-direction: column;
+		.flex-col {
+			display: flex;
+			flex-direction: column;
 
-	}
+		}
 
-	.form{
-		display: flex;
-		flex-direction: column;
-		row-gap: 1rem;
-	}
-</style>
+		.form {
+			display: flex;
+			flex-direction: column;
+			row-gap: 1rem;
+		}
+	</style>
 </head>
+
 <body class="container">
 	<div>
-		
+
 		<h1>Register</h1>
-		
+
 		<form class="form" action="FormProcess" method="post">
 			<div>
-				
+
 				<span>Name <span>*</span></span>
 				<div class="flex-row">
 					<div class="flex-col">
-						<input name="first" type="text"/> 
+						<input name="first" type="text" />
 						<label name="first">First</label>
 					</div>
-		
+
 					<div class="flex-col">
-						<input name="last" type="text"/> 
+						<input name="last" type="text" />
 						<label name="last">Last</label>
 					</div>
 				</div>
 			</div>
-			
+
 
 			<div class="flex-col">
 				<label name="username">Username <span>*</span></label>
-				<input name="username" type="text"/>
+				<input name="username" type="text" />
 			</div>
 
 			<div class="flex-col">
 				<label name="email">E-mail <span>*</span></label>
-				<input name="email" type="email"/>
+				<input name="email" type="email" />
 			</div>
 
 			<div class="flex-col">
 				<label name="password">Password <span>*</span></label>
-				<input name="password" type="password"/>
+				<input name="password" type="password" />
 			</div>
 
-			
+
 			<div class="flex-col">
 				<label name="facebook">Facebook</label>
-				<input name="facebook" type="url"/>
+				<input name="facebook" type="url" />
 			</div>
 
 
@@ -84,9 +86,10 @@
 
 
 			<button type="submit" style="width: 7rem;">Submit</button>
-			
-			
+
+
 		</form>
 	</div>
 </body>
+
 </html>

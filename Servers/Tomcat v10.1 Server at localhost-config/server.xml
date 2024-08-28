@@ -22,10 +22,8 @@
   <!-- Security listener. Documentation at /docs/config/listeners.html
   <Listener className="org.apache.catalina.security.SecurityListener" />
   -->
-  <!-- OpenSSL support using Tomcat Native -->
-  <Listener className="org.apache.catalina.core.AprLifecycleListener"/>
-  <!-- OpenSSL support using FFM API from Java 22 -->
-  <!-- <Listener className="org.apache.catalina.core.OpenSSLLifecycleListener" /> -->
+  <!-- APR library loader. Documentation at /docs/apr.html -->
+  <Listener SSLEngine="on" className="org.apache.catalina.core.AprLifecycleListener"/>
   <!-- Prevent memory leaks due to use of particular java/javax APIs-->
   <Listener className="org.apache.catalina.core.JreMemoryLeakPreventionListener"/>
   <Listener className="org.apache.catalina.mbeans.GlobalResourcesLifecycleListener"/>
@@ -86,7 +84,7 @@
         <UpgradeProtocol className="org.apache.coyote.http2.Http2Protocol" />
         <SSLHostConfig>
             <Certificate certificateKeystoreFile="conf/localhost-rsa.jks"
-                         certificateKeystorePassword="changeit" type="RSA" />
+                         type="RSA" />
         </SSLHostConfig>
     </Connector>
     -->
@@ -142,7 +140,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="Tuan01_Bai04_Form" path="/Tuan01_Bai04_Form" reloadable="true" source="org.eclipse.jst.jee.server:Tuan01_Bai04_Form"/></Host>
+      <Context docBase="Tuan02_Bai06_UploadFile" path="/Tuan02_Bai06_UploadFile" reloadable="true" source="org.eclipse.jst.jee.server:Tuan02_Bai06_UploadFile"/><Context docBase="Tuan02_Bai07_UploadAndSaveDataToSQL" path="/Tuan02_Bai07_UploadAndSaveDataToSQL" reloadable="true" source="org.eclipse.jst.jee.server:Tuan02_Bai07_UploadAndSaveDataToSQL"/></Host>
     </Engine>
   </Service>
 </Server>
