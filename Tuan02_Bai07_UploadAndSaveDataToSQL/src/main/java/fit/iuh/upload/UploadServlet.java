@@ -69,7 +69,7 @@ public class UploadServlet extends HttpServlet {
 			DriverManager.registerDriver(new SQLServerDriver());
 			Connection conn = DriverManager.getConnection("jdbc:sqlserver://localhost:1433;databaseName=UploadFileServletDB;encrypt=false", "sa", "sapassword");
 
-			String sql = "INSERT INTO contacts('first_name', 'last_name', 'photo') VALUES (?, ?, ?)";
+			String sql = "INSERT INTO contacts(first_name, last_name, photo) VALUES (?, ?, ?)";
 			
 			PreparedStatement pstm = conn.prepareStatement(sql);
 			

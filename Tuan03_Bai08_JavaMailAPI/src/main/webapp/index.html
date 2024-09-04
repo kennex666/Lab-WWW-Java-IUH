@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>Demo gui email</h1>
+	
+	<form action="sendMail" method="post" enctype="multipart/form-data">
+		<label for="title">Title</label>
+		<input name="title"/>
+		<br>
+		
+		<label for="to">To: </label>
+		<input name="to"/>
+		
+		<br>
+		
+		<label for="body">Body: </label>
+		<br>
+		<textarea name="body"> </textarea>
+		
+		<br>
+		
+		<input name="file" type="file"/>
+		<br>
+		
+		<button type="submit">Submit</button>
+	</form>
+</body>
+</html>
