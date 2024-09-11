@@ -1,0 +1,67 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+pageEncoding="ISO-8859-1" %>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="ISO-8859-1" />
+    <title>Insert title here</title>
+  </head>
+
+  <body>
+    <form action="sendForm" method="post">
+      <div>
+        <label for="fname">First name</label>
+        <input type="text" name="fname" />
+        <span>(max 30 character a-z and A-Z)</span>
+      </div>
+
+      <div>
+        <label for="lname">Last name</label>
+        <input type="text" name="lname" />
+        <span>(max 30 character a-z and A-Z)</span>
+      </div>
+
+      <div>
+        <label for="dob">Date of birth</label>
+        <div>
+          <select name="day" id="day">
+            Day
+          </select>
+          <select name="month" id="month">
+            Month
+          </select>
+          <select name="year" id="year">
+            Year
+          </select>
+        </div>
+      </div>
+
+      <div>
+        <label for="email">Email</label><input type="text" name="email" />
+      </div>
+
+      <div>
+        <label for="pnumber">Mobile number</label
+        ><input type="text" name="pnumber" /><span>(10 digit number)</span>
+      </div>
+
+      <div>
+        <label for="">Gender</label>
+        <div>Male<input type="radio" name="Male" value="Male" /></div>
+        <div>Female<input type="radio" name="Male" value="Male" /></div>
+      </div>
+
+      <div>
+        <label for="">Address</label
+        ><textarea name="address" id="" cols="30" rows="10"></textarea>
+      </div>
+      
+
+      <div><label for="">City</label><input type="text" name="city"></div>
+      <div><label for="">Pin</label><input type="text" name="pin"></div>
+      <div><label for="">State</label><input type="text" name="state"></div>
+      <div><label for="">Country</label><input type="text" name="country"></div>
+      <div><label for="">City</label><input type="text" name="city"></div>
+    </form>
+  </body>
+</html>
