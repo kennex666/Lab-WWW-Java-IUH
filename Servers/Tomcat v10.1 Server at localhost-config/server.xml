@@ -140,7 +140,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="Tuan02_Bai06_UploadFile" path="/Tuan02_Bai06_UploadFile" reloadable="true" source="org.eclipse.jst.jee.server:Tuan02_Bai06_UploadFile"/><Context docBase="Tuan02_Bai07_UploadAndSaveDataToSQL" path="/Tuan02_Bai07_UploadAndSaveDataToSQL" reloadable="true" source="org.eclipse.jst.jee.server:Tuan02_Bai07_UploadAndSaveDataToSQL"/></Host>
+      <Context docBase="Tuan02_Bai07_UploadAndSaveDataToSQL" path="/Tuan02_Bai07_UploadAndSaveDataToSQL" reloadable="true" source="org.eclipse.jst.jee.server:Tuan02_Bai07_UploadAndSaveDataToSQL"/><Context docBase="Tuan04_Bai01_ThaoTacForm" path="/Tuan04_Bai01_ThaoTacForm" reloadable="true" source="org.eclipse.jst.jee.server:Tuan04_Bai01_ThaoTacForm"/><Context docBase="Tuan03_Bai08_JavaMailAPI" path="/Tuan03_Bai08_JavaMailAPI" reloadable="true" source="org.eclipse.jst.jee.server:Tuan03_Bai08_JavaMailAPI"/></Host>
     </Engine>
   </Service>
 </Server>
