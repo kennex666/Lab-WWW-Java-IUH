@@ -1,6 +1,7 @@
 package fit.iuh.entities;
 
 public class ItemCart {
+	
 	private Product product;
 	
 	private int quantity;

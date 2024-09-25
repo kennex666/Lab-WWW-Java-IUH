@@ -1,6 +1,13 @@
 <Context>
-  <Resource name="jdbc/sqlserver" auth="Container" type="javax.sql.DataSource"
-               maxTotal="100" maxIdle="30" maxWaitMillis="10000"
-               username="sa" password="sapassword" driverClassName="com.mysql.jdbc.Driver"
-               url="jdbc:sqlserver://localhost:1433;databaseName="/>
+  <Resource name="jdbc/sqlserver"
+            auth="Container"
+            type="javax.sql.DataSource"
+            maxTotal="100"
+            maxIdle="30"
+            maxWaitMillis="10000"
+            username="sa"
+            password="sapassword"
+            driverClassName="com.microsoft.sqlserver.jdbc.SQLServerDriver"
+            url="jdbc:sqlserver://localhost:1433;databaseName=BaiTap04_JSP;encrypt=false"
+            factory="org.apache.tomcat.jdbc.pool.DataSourceFactory"/>
 </Context>

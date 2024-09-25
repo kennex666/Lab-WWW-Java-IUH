@@ -9,4 +9,24 @@
     <welcome-file>default.jsp</welcome-file>
     <welcome-file>default.htm</welcome-file>
   </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>ProductController</display-name>
+    <servlet-name>ProductController</servlet-name>
+    <servlet-class>fit.iuh.controllers.ProductController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ProductController</servlet-name>
+    <url-pattern>/</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>CartController</display-name>
+    <servlet-name>CartController</servlet-name>
+    <servlet-class>fit.iuh.controllers.CartController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CartController</servlet-name>
+    <url-pattern>/CartController</url-pattern>
+  </servlet-mapping>
 </web-app>
