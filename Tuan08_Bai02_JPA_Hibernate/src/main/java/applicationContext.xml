@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+	   		http://www.springframework.org/schema/beans/spring-beans.xsd">	
+	   		
+	<bean id="fortune" class="iuh.fit.se.libs_impl.HappyFortuneService">
+	</bean>	
+	
+	<bean id="baseFortune" class="iuh.fit.se.libs_impl.BaseFortuneService">
+	</bean>
+	
+	<bean id="tennisFortune" class="iuh.fit.se.libs_impl.TennisFortuneService"></bean>
+	
+
+	<bean id="criketCoach" class="iuh.fit.se.libs_impl.CriketCoach">
+		<property name="fs" ref="fortune"></property>
+		
+		<property name="email" value="duongthaibao.job@gmail.com"></property>
+		
+		<property name="team" value="LovePanther"></property>
+	</bean>
+	
+	<bean id="tennisCoach" class="iuh.fit.se.libs_impl.TennisCoach">
+		<constructor-arg ref="tennisFortune"></constructor-arg>
+	</bean>
+	
+	<bean id="basecoach" class="iuh.fit.se.libs_impl.BaseballCoach">
+		<constructor-arg ref="baseFortune"></constructor-arg>
+	</bean>
+	
+	
+</beans>
