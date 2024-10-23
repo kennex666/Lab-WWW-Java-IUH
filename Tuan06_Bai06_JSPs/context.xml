@@ -1,0 +1,13 @@
+<Context>
+  <Resource name="sqlserver"
+            auth="Container"
+            type="javax.sql.DataSource"
+            maxTotal="100"
+            maxIdle="30"
+            maxWaitMillis="10000"
+            username="sa"
+            password="sapassword"
+            driverClassName="com.microsoft.sqlserver.jdbc.SQLServerDriver"
+            url="jdbc:sqlserver://localhost:1433;databaseName=QuanLyGiangVienDeTai;encrypt=false;trustServerCertificate=true"
+            factory="org.apache.tomcat.jdbc.pool.DataSourceFactory"/>
+</Context>

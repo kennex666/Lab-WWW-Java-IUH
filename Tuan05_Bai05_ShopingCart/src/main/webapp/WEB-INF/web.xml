@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>Tuan05_Bai05_ShopingCart</display-name>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+  	<servlet-name>ProductController</servlet-name>
+  	<servlet-class>controllers.ProductController</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>ProductController</servlet-name>
+  	<url-pattern>/products</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+  	<servlet-name>CartController</servlet-name>
+  	<servlet-class>controllers.CartController</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>CartController</servlet-name>
+  	<url-pattern>/cart</url-pattern>
+  </servlet-mapping>
+  
+  <context-param>
+  	<param-name>owner</param-name>
+  	<param-value>Dương Thái Bảo</param-value>
+  </context-param>
+  
+</web-app>
